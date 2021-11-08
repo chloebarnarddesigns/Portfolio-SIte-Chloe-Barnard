@@ -8,83 +8,213 @@ White #FFFFFF
 img {
   width: 100%;
 }
-  header {
 
-	background-color: #FFFFFF;
-					}
+header {
+  -webkit-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  -moz-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  position: relative;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+}
+
+nav>ul>li>a:hover {
+  padding: 0 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #7894FF;
+}
+
+nav>ul>li>a:visted {
+  padding: 0 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 133px;
+}
 
 body {
-background-color: #F2F8FF;
-
+  background-color: #F2F8FF;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
 h1, h2, h3, {
   font-family: 'Roboto', sans-serif;
   display: inline-block;
- line-height: 1.4;}
-h1{font-size: 2.75em;
-  font-weight: 700;}
-h2{font-size: 2.25em;
-  font-weight: 700;}
-h3{font-size: 1.75em;
-  font-weight: 700;}
+  line-height: 1.4;
+}
 
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
 
-  a {
-    color: #0000FF;
-    text-decoration: none; /* No underlining */
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+a {
+  color: #0000FF;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover {
+  color: #cc6540;
+  text-decoration: underline;
+
+  /* Underlining when hovering over a link */
+  a:visited {
+    /* visited link */
+    color: #551A8B;
   }
-
-  a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
-
-a:visited { /* visited link */
-  color: #551A8B;
 }
 
-}
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #EE0000;
 }
 
-#work {
-
-}
-
-
-#hero {
-
-
-}
-#contact {
-  background-color: #ffffff;
-
-}
-
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #7894FF;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 300;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #8899FF; /* width of the border, type, color */
+  border-bottom: 2px solid #8899FF;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button.contact {
   background-color: transparent;
   color: #7894FF;
   text-transform: uppercase;
   border: 2px solid #7894FF;
 }
+
 .button.contact:hover {
   background-color: #F2F8FF;
   color: #121F50;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 20px;
+}
+
+.containernav {
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
+.row {
+  margin: 24px 0;
+}
+
+/* only applies to home page*/
+#work.row {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #efefef;
+  padding-top: 28px;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67rem 0;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+.logo {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding-top: 20px;
+  margin-top: 48px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+
+.professionalemail {
+  text-align: center;
+}
+
+.linkedin {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.behance {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 20px;
 }
