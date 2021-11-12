@@ -2,9 +2,7 @@
 Colors used:
 Primary Color (Blue): F2F8FF;
 White #FFFFFF
-
-*/
-/* imagery */
+ imagery */
 img {
   width: 100%;
 }
@@ -25,7 +23,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20;
 }
 
 nav>ul>li {
@@ -118,7 +116,7 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #7894FF;
   color: #ffffff;
   /* needed to override the default link color */
@@ -183,8 +181,16 @@ a:active {
   display: block;
 }
 
+#mywork {
+  text-align: center;
+}
+
+#mywork p {
+  text-align: left;
+}
+
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   margin-top: 10px;
 }
 
@@ -194,8 +200,13 @@ a:active {
   margin-top: 48px;
 }
 
+#contact p {
+  text-align: center;
+  color: #000000;
+}
+
 footer {
-  padding-top: 10px;
+  padding-top: 0px;
   padding-right: 20px;
   padding-bottom: 0px;
   padding-left: 20px;
@@ -217,4 +228,143 @@ footer {
   float: left;
   text-align: right;
   padding-right: 20px;
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+      padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 20px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
+    padding-top: 140px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  <!-- START PROJECT BLOCK EXERCISE -->
+
+  .col-md-6 {
+      width: 50%;
+    }
+
+[class*="col-"] {
+    float: left;
+    padding-right: 40px;
+    padding-left: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h2 {
+     margin-top: 0;
+   }
+
+   h2 {
+     text-align: center;
+   }
+
+   #about {
+     text-align: center;
+   }
+
+
+
+   #my-img {
+    width: 400px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jellyfish {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  @keyframes color-change {
+    from {
+        fill: #CB1919;
+    }
+
+    to {
+      fill: #55F8FF;
+    }
+  }
+
+  .cls-15 {
+    animation: 3s color-change infinite alternate linear;
+  }
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+.imgwrapper,
+.deswrapper {
+  padding: 10px;
+}
+
+
+
+
 }
