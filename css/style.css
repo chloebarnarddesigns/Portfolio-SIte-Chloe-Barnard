@@ -2,61 +2,30 @@
 Colors used:
 Primary Color (Blue): F2F8FF;
 White #FFFFFF
- imagery */
-img {
-  width: 100%;
-}
-
-header {
-  -webkit-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
-  -moz-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
-  box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
-  background-color: #FFFFFF;
-  text-align: center;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  position: relative;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 20;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 25px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #000000;
-}
-
-nav>ul>li>a:hover {
-  padding: 0 25px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #7894FF;
-}
-
-nav>ul>li>a:visted {
-  padding: 0 25px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #000000;
+imagery */
+html {
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  padding-top: 133px;
+header {
+  position: fixed;
+  -webkit-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  -moz-box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  box-shadow: 0px 8px 13px 0px rgba(50, 49, 59, 0.19);
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  width: 100%
+}
+
+.heighttest {
+  height: 100px;
 }
 
 body {
@@ -71,7 +40,7 @@ body {
   color: #000000;
 }
 
-h1, h2, h3, {
+h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   line-height: 1.4;
@@ -92,43 +61,65 @@ h3 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+/* links */
 a {
   color: #0000FF;
   text-decoration: none;
   /* No underlining */
 }
 
-a:hover {
+a:visited {
+  color: #551A8B;
+}
+
+a:hover,
+a:focus {
   color: #cc6540;
   text-decoration: underline;
-
-  /* Underlining when hovering over a link */
-  a:visited {
-    /* visited link */
-    color: #551A8B;
-  }
 }
 
 a:active {
-  /* selected link */
   color: #EE0000;
 }
 
 .button {
   display: inline-block;
-/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #7894FF;
   color: #ffffff;
   /* needed to override the default link color */
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #8899FF;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-property: opacity;
 }
+
 .button:hover {
-  opacity: 0.7;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.button:active {
+  display: inline-block;
+  color: #7894FF;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #d5d5d5;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
 }
 
 .button.contact {
@@ -136,29 +127,36 @@ a:active {
   color: #7894FF;
   text-transform: uppercase;
   border: 2px solid #7894FF;
+  text-align: center;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.contact:hover {
-  background-color: #F2F8FF;
-  color: #121F50;
+  opacity: 0.75;
+  text-decoration: none;
 }
 
-/* Layout styling */
+.button.contact:active {
+  display: inline-block;
+  color: #121F50;
+  /* needed to override the default link color */
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #d5d5d5;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
 .container {
   padding: 0 20px;
 }
 
-.containernav {
-  padding-left: 20px;
-  padding-right: 20px;
-  overflow: auto;
-}
-
 .row {
-  margin: 24px 0;
+  margin: 25px 0;
 }
 
-/* only applies to home page*/
 #work.row {
   padding-bottom: 48px;
   border-bottom: 1px solid #efefef;
@@ -167,8 +165,6 @@ a:active {
 
 #hero h1 {
   text-align: center;
-  margin: 0;
-  padding: 0.67rem 0;
 }
 
 #hero {
@@ -184,12 +180,24 @@ a:active {
   display: block;
 }
 
-#mywork {
+#work {
   text-align: center;
 }
 
-#mywork p {
+#work h2 {
+  text-align: center;
+}
+
+#work p {
   text-align: left;
+}
+
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  margin-top: 0;
 }
 
 .logo {
@@ -197,10 +205,96 @@ a:active {
   margin-top: 10px;
 }
 
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+}
+
+nav>ul>li>a:visted {
+  padding: 0 10px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+}
+
+nav>ul>li>a:hover {
+  padding: 0 10px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #7894FF;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 10px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #505050;
+}
+
+nav>ul>li>a:active {
+  padding: 0 10px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #95f7ac;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 100px;
+}
+
 #contact {
   background-color: #ffffff;
   padding-top: 20px;
   margin-top: 48px;
+  text-align: center;
+  width;
+  100%
+}
+
+#contact h2 {
+  color: #1f1f1f;
 }
 
 #contact p {
@@ -220,29 +314,43 @@ footer {
 }
 
 .linkedin {
-  width: 50%;
-  float: right;
-  text-align: left;
-  padding-left: 20px;
+  width: 50px;
 }
 
 .behance {
-  width: 50%;
-  float: left;
-  text-align: right;
-  padding-right: 20px;
+  width: 50px;
 }
 
+#about {
+  text-align: center;
+}
 
+#mypic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#mystory {
+  text-align: center;
+}
+
+#mystory p {
+  text-align: left;
+}
+
+#sociallinks .links {
+  display: inline-block;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
-      padding: 20px 0 13px;
+    padding: 20px 0 13px;
   }
 
   nav {
@@ -252,7 +360,7 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: 1 em 0;
   }
 
   nav>ul>li {
@@ -268,24 +376,22 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 140px;
+    padding-top: 100px;
   }
 
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  #hero span {
-    display: block;
-  }
-
-  <!-- START PROJECT BLOCK EXERCISE -->
+#hero span{
+  display: block;
+}
 
   .col-md-6 {
-      width: 50%;
-    }
+    width: 50%;
+  }
 
-[class*="col-"] {
+  [class*="col-"] {
     float: left;
     padding-right: 40px;
     padding-left: 20px;
@@ -297,32 +403,42 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  #about-page h2 {
-     margin-top: 0;
-   }
 
-   h2 {
-     text-align: center;
-   }
-
-   #about {
-     text-align: center;
-   }
-
-
-
-   #my-img {
-    width: 400px;
+#hero span {
+    display: block;
   }
+
+  .logo {
+    max-width: 150px;
+    margin-top: 10px;
+  }
+
+  .resume {
+    ext-align: center;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #mypic {
+    width: 500px;
+  }
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
   * {
-    box-sizing: border-box;
-  }
+     box-sizing: border-box;
+   }
 
   .col-lg-7 {
     width: 58.33%;
@@ -337,7 +453,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
+}
   /* ==============================
   Jelly Fish Color Animation(1024px or larger)
   ================================= */
@@ -346,9 +462,10 @@ Large devices (1024px or larger)
     max-width: 100%;
     height: auto;
   }
+
   @keyframes color-change {
     from {
-        fill: #CB1919;
+      fill: #CB1919;
     }
 
     to {
@@ -359,17 +476,15 @@ Large devices (1024px or larger)
   .cls-15 {
     animation: 3s color-change infinite alternate linear;
   }
-
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
-.imgwrapper,
-.deswrapper {
-  padding: 10px;
-}
-
-
+  .imgwrapper,
+  .deswrapper {
+    padding: 10px;
+  }
 }
