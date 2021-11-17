@@ -180,6 +180,9 @@ a:active {
   display: block;
 }
 
+#workheader {
+  text-align: center;
+}
 
 #work p {
   text-align: left;
@@ -291,6 +294,8 @@ main {
   100%
 }
 
+
+
 #contact h2 {
   color: #1f1f1f;
 }
@@ -381,9 +386,9 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
-#hero span{
-  display: block;
-}
+  #hero span {
+    display: block;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -401,8 +406,7 @@ Medium devices (640px and larger)
     display: table;
   }
 
-
-#hero span {
+  #hero span {
     display: block;
   }
 
@@ -415,6 +419,7 @@ Medium devices (640px and larger)
     ext-align: center;
   }
 
+
   #about-page h3 {
     margin-top: 0;
   }
@@ -426,17 +431,15 @@ Medium devices (640px and larger)
   #mypic {
     width: 500px;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   * {
-     box-sizing: border-box;
-   }
+    box-sizing: border-box;
+  }
 
   .col-lg-7 {
     width: 58.33%;
@@ -452,28 +455,29 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 }
-  /* ==============================
+
+/* ==============================
   Jelly Fish Color Animation(1024px or larger)
   ================================= */
-  .jellyfish {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.jellyfish {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #CB1919;
   }
 
-  @keyframes color-change {
-    from {
-      fill: #CB1919;
-    }
-
-    to {
-      fill: #55F8FF;
-    }
+  to {
+    fill: #55F8FF;
   }
+}
 
-  .cls-15 {
-    animation: 3s color-change infinite alternate linear;
-  }
+.cls-15 {
+  animation: 3s color-change infinite alternate linear;
+}
 }
 
 /* ==============================
