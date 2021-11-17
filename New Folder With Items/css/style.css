@@ -124,9 +124,9 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #7894FF;
+  color: #4168FF;
   text-transform: uppercase;
-  border: 2px solid #7894FF;
+  border: 2px solid #4168FF;
   text-align: center;
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -194,6 +194,11 @@ a:active {
 }
 
 .logo {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+.bottomlogo {
   max-width: 150px;
   margin-top: 10px;
 }
