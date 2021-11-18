@@ -320,6 +320,10 @@ footer {
   text-align: left;
 }
 
+.mystoryheader {
+  text-align: center;
+}
+
 #sociallinks .links {
   display: inline-block;
 }
