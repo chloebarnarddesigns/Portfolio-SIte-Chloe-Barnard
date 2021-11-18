@@ -70,12 +70,12 @@ img {
 
 /* links */
 a {
-  color: #00ff;
+  color: #000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #551a8b;
+  color: #000;
 }
 
 a:hover,
@@ -85,7 +85,7 @@ a:focus {
 }
 
 a:active {
-  color: #e000;
+  color: #000;
 }
 
 .button {
@@ -201,6 +201,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 nav > ul > li > a {
@@ -215,17 +216,15 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #7894ff;
+  color: #000;
 }
-
-
 
 nav > ul > li > a:active {
   padding: 0 10px;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #95f7ac;
+  color: #000;
 }
 
 .navtoggle li:not(:last-child) {
