@@ -17,11 +17,11 @@ html {
 
 header {
   position: fixed;
-  -webkit-box-shadow: 0 px 8px 13px 0 px rgba(50, 49, 59, 0.19);
-  -moz-box-shadow: 0 px 8px 13px 0 px rgba(50, 49, 59, 0.19);
-  box-shadow: 0 px 8px 13px 0 px rgba(50, 49, 59, 0.19);
+  -webkit-box-shadow: 0 8px 13px 0 rgba(50, 49, 59, 0.19);
+  -moz-box-shadow: 0 8px 13px 0 rgba(50, 49, 59, 0.19);
+  box-shadow: 0 8px 13px 0 rgba(50, 49, 59, 0.19);
   background-color: #fff;
-  padding-top: 10px 0 px 10px 0 px;
+  padding-top: 10px 0 10px 0;
   width: 100%;
 }
 
@@ -183,7 +183,7 @@ a:active {
   text-align: center;
 }
 
-#about h2 {
+#about-h2 {
   margin-top: 0;
 }
 
@@ -265,7 +265,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #contact {
