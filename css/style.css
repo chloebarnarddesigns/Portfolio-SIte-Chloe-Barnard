@@ -1,7 +1,6 @@
 /*
 Colors used:
-Body -
-  background-color: #F2F8FF
+Body -background-color: #F2F8FF
 Buttons -
 background-color: #4168FF;
 text color: #ffffff;
@@ -39,27 +38,31 @@ body {
 }
 
 h1 h2 h3 h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PP Agrandir', sans-serif;
   display: inline-block;
   line-height: 1.4;
 }
 
 h1 {
+  font-family: 'PP Agrandir', sans-serif;
   font-size: 2.75em;
   font-weight: 700;
 }
 
 h2 {
+  font-family: 'PP Agrandir', sans-serif;
   font-size: 2.25em;
   font-weight: 700;
 }
 
 h3 {
+  font-family: 'PP Agrandir', sans-serif;
   font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
+  font-family: 'PP Agrandir', sans-serif;
   font-size: 1.25em;
   font-weight: 700;
 }
@@ -156,6 +159,7 @@ a:active {
 
 #hero h1 {
   text-align: center;
+  
 }
 
 #hero {
@@ -163,7 +167,7 @@ a:active {
   display: inline-block;
   width: 100%;
   text-align: center;
-  background-color: #fff;
+  background-color: #FFF;
   margin-bottom: 16px;
 }
 
